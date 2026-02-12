@@ -1,0 +1,4 @@
+ALB
+- Listener: 80 -> Target Group
+- Target Group: HTTP 8080
+- Health Check: /

@@ -1,0 +1,12 @@
+{
+  "family": "springboot-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "containerDefinitions": [{
+    "name": "springboot",
+    "image": "<ECR_IMAGE>",
+    "portMappings": [{"containerPort": 8080}]
+  }]
+}
